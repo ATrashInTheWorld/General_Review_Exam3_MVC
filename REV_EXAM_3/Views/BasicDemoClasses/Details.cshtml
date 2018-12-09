@@ -1,0 +1,34 @@
+﻿@model REV_EXAM_3.Models.BasicDemoClass
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BasicDemoClass</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.randomeDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.randomeDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.myPk }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

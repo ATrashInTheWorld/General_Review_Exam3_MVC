@@ -1,0 +1,24 @@
+﻿@model IEnumerable<REV_EXAM_3.Models.BasicDemoClass>
+
+@{
+    ViewBag.Title = "BOG_Index";
+}
+
+<h2>BOG_Index</h2>
+
+@{/*
+   * This is how you create an index
+   * 1. you set you model in IEnumerable mode just like above (line 1), you need it 
+   *    because you retrieved more than one element from the controller (See controller to this methode)/around line 127 
+*/} 
+
+@{ 
+    //this is how you display them manualy
+    // var x representing one object in the returned list
+    // Model being all the objects
+}
+
+@foreach(var x in Model)
+    {
+        <p>So basically <strong>@x.name1</strong> did something on the date of <strong>@x.randomeDate</strong></p>
+    }
