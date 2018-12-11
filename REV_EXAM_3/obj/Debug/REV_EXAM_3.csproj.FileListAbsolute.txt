@@ -71,5 +71,7 @@ J:\COLL\S5\WEB\REV_EXAM_3\REV_EXAM_3\bin\EntityFramework.dll
 J:\COLL\S5\WEB\REV_EXAM_3\REV_EXAM_3\bin\EntityFramework.SqlServer.dll
 J:\COLL\S5\WEB\REV_EXAM_3\REV_EXAM_3\bin\EntityFramework.xml
 J:\COLL\S5\WEB\REV_EXAM_3\REV_EXAM_3\bin\EntityFramework.SqlServer.xml
+J:\COLL\S5\WEB\REV_EXAM_3\REV_EXAM_3\bin\Angela.Core.dll
 J:\COLL\S5\WEB\REV_EXAM_3\REV_EXAM_3\obj\Debug\REV_EXAM_3.Migrations.Initial.resources
 J:\COLL\S5\WEB\REV_EXAM_3\REV_EXAM_3\obj\Debug\REV_EXAM_3.csproj.GenerateResource.cache
+J:\COLL\S5\WEB\REV_EXAM_3\REV_EXAM_3\obj\Debug\REV_EXAM_3.Migrations.Initial1.resources

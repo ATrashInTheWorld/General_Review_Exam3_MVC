@@ -1,0 +1,28 @@
+﻿@model IEnumerable<REV_EXAM_3.Models.BasicDemoClass>
+
+
+@{
+    ViewBag.Title = "SpecificTemplates";
+}
+
+<h2>Specific Templates for a specific model</h2>
+
+@*In this section I will explain hw to set specific templates for specific
+    models:
+
+    1) In your Shared folder, create a folder called exactly like this: DisplayTemplates
+    2) Then in the DisplayTemplates folder, create a new normal View Called Exactly as one of the model
+            In my case I will create one called BasicDemoClass, in order to fit with my BasicDemoClass.cs
+    ***** When done, proceed to step 3 ********
+3) To display a list of item, again, you have to make it IEnumerable, so again,
+        go to line 1 and add it, once more IEnumerable, because in the controller, we sed a list
+        of them
+4) The line on line 25 and it will automatically display with the template created in you DisplayTemplates folder
+
+
+*@
+
+@Html.DisplayForModel(Model);
+<!--
+    This line automatically applies for every element in the list so no foreach loop needed
+-->

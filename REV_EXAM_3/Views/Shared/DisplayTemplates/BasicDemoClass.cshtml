@@ -1,0 +1,27 @@
+﻿@model REV_EXAM_3.Models.BasicDemoClass
+
+
+@{
+    ViewBag.Title = "DBFirstDemo";
+}
+
+
+@*What is this view for?
+Well, this view is basically how every DBFirstDemo items in the db will look like
+To do so :
+1) at the top of you page add model PROJECT.Models.Model going with this template 
+            just like line 1
+2) EDIT*@
+
+<div style="border: 5px dashed blue;">
+    LOL
+       <p><strong>@Model.myPk</strong></p>
+        <p style="position:center;">@Model.name1</p>
+        <p style="ruby-align:right; color:orangered;">@Model.randomeDate</p>
+    Review
+</div><br />
+
+@*So what does that do in the end?
+This actually, every time you ask for an BasicDemoClass object, it will call this View
+Which is used as an template in order so every object as wanted. Which means every object will have his own
+border, with his own information*@

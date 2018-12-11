@@ -20,5 +20,7 @@ namespace REV_EXAM_3.Models
         }
 
         public System.Data.Entity.DbSet<REV_EXAM_3.Models.BasicDemoClass> BasicDemoClasses { get; set; }
+
+        public System.Data.Entity.DbSet<REV_EXAM_3.Models.DBFirstDemo> DBFirstDemoes { get; set; }
     }
 }

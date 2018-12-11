@@ -1,0 +1,24 @@
+﻿@model IEnumerable<REV_EXAM_3.Models.DBFirstDemo>
+
+@{
+    ViewBag.Title = "ANGELA";
+}
+
+<h2>ANGELA</h2>
+
+ @*This page page only shows the results of how AngelSmith works
+All the explanation is in the controller*@
+
+
+<!-- Manual foreach in for the list, also understand that we could have done 
+    a display template for this one too-->
+@foreach(var x in Model)
+{
+<div style="border:2px solid green;">
+    <p>@x.Id</p>
+    <p>@x.value1</p>
+    <p>@x.value2</p>
+    <p>@x.value4</p>
+</div>
+    <br />
+}

@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Angela.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AngelaSmith.1.0.1\lib\net45\Angela.Core.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -50,6 +53,8 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -116,18 +121,26 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BasicDemoClassesController.cs" />
+    <Compile Include="Controllers\DBFirstDemoesController.cs" />
     <Compile Include="Controllers\MainController.cs" />
+    <Compile Include="Migrations\201812110014562_Initial.cs" />
+    <Compile Include="Migrations\201812110014562_Initial.Designer.cs">
+      <DependentUpon>201812110014562_Initial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201812091647207_Initial.cs" />
-    <Compile Include="Migrations\201812091647207_Initial.Designer.cs">
-      <DependentUpon>201812091647207_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201812110026512_Initial1.cs" />
+    <Compile Include="Migrations\201812110026512_Initial1.Designer.cs">
+      <DependentUpon>201812110026512_Initial1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BasicDemoClass.cs" />
+    <Compile Include="Models\DBFirstDemo.cs" />
+    <Compile Include="Models\DUNNO.cs" />
     <Compile Include="Models\REV_EXAM_3Context.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\Combo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -139,6 +152,16 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Main\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Main\SpecificTemplates.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\BasicDemoClass.cshtml" />
+    <Content Include="Views\Main\ANGELA.cshtml" />
+    <Content Include="Views\DBFirstDemoes\Create.cshtml" />
+    <Content Include="Views\DBFirstDemoes\Delete.cshtml" />
+    <Content Include="Views\DBFirstDemoes\Details.cshtml" />
+    <Content Include="Views\DBFirstDemoes\Edit.cshtml" />
+    <Content Include="Views\DBFirstDemoes\Index.cshtml" />
+    <Content Include="Views\Main\ComboOf2Models.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Combo.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -150,8 +173,11 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201812091647207_Initial.resx">
-      <DependentUpon>201812091647207_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201812110014562_Initial.resx">
+      <DependentUpon>201812110014562_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812110026512_Initial1.resx">
+      <DependentUpon>201812110026512_Initial1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
